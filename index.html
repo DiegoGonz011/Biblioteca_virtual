@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Gonzalez">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Biblioteca Virtual</title>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="logo">
+            <img src="static/images/li.gif" alt="logito" class="logito">
+            <div class="logo-2">
+                <h1>Biblioteca</h1>
+                <h1><span class="azul">Horizonte</span></h1>
+            </div>
+        </div>
+        <div class="registrarse-compra">
+            <div class="logiarse">
+                <input type="email" name="email" id="email" placeholder="email">
+                <button class="Login">Ingresar</button>
+            </div>
+            <div class="compras">
+                <img src="static/images/carrito.png" alt="carrito" class="carrito">
+                <p>Libros seleccionados:<span id="contador-1">0</span></p>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="arriba">
+            <div class="contenedor-img">
+                <div class="imagenes">
+                    <img src="static/images/img1.png" alt="img1" class="comidas">
+                    <p>Novelas</p>
+
+                </div>
+                <div class="imagenes">
+                    <img src="static/images/img2.png" alt="img2" class="comidas">
+                    <p>Ciencias</p>
+                </div>
+                <div class="imagenes">
+                    <img src="static/images/img3.png" alt="img3" class="comidas">
+                    <p>Historia</p>
+                </div>
+                <div class="imagenes">
+                    <img src="static/images/img4.png" alt="img4" class="comidas">
+                    <p>Tecnologia</p>
+                </div>
+                <div class="imagenes">
+                    <img src="static/images/img5.png" alt="img5" class="comidas">
+                    <p>Arte</p>
+                </div>
+                <div class="imagenes">
+                    <img src="static/images/img6.png" alt="img6" class="comidas">
+                    <p>Infantil</p>
+                </div>
+            </div>
+        </section>
+        <section class="abajo">
+            <div class="abajo-izquierda">
+                <div class="parrafo">
+                    <p>Descubre nuevas historias</p>
+                    <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos.Conocimeinto aventura y mucho mas al alcance de un clic.</p>
+                </div>
+                <div class="imagenYtexto">
+                    <img id="imagen-Grandota" src="static/images/comida-mexicana.jpg" alt="img7" class="imagen-Grande">
+                    <p>Conoce a la biblioteca horizonte</p>
+                </div>
+            </div>
+            <div class="abajo-derecha">
+                <h1>LIbros recomendados:</h1>
+                <div class="img-ordenes">
+                    <img src="static/images/cien años de soledad.webp" alt="8" class="ordenes">
+                    <p>Cien años de soledad</p>
+                    <p>Gabriel García Márquez</p>
+                    <a href="#">Ver más</a>
+                    <button onclick="compras('#contador-1')">+</button>
+                </div>
+                <div class="img-ordenes">
+                    <img src="static/images/sapiens.jpg" alt="9" class="ordenes">
+                    <p>Sapiens</p>
+                    <p>Yuval Noah</p>
+                    <a href="#">Ver más</a>
+                    <button onclick="compras('#contador-1')">+</button>
+                </div>
+                <div class="img-ordenes">
+                    <img src="static/images/ElPrincipito.webp" alt="10" class="ordenes">
+                    <p>El principito</p>
+                    <p>Antoine de Saint-Exupéry</p>
+                    <a href="#">Ver más</a>
+                    <button onclick="compras('#contador-1')">+</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
